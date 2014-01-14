@@ -1,0 +1,19 @@
+
+LAYERS {
+LAYER {
+    1-15 {
+        NAME: 'land'
+        TYPE: POLYGON
+        @layerconfig
+        CONNECTIONTYPE: OGR
+        CONNECTION: '../geojson/SEN_adm4.geojson'
+        CLASS {
+            STYLE {
+                8-15{ COLOR:'#EEECDF'
+					}
+                OUTLINECOLOR: '#66A3D2'
+            }
+        }
+    }
+}
+}
